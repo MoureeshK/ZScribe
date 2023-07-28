@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link href="SignIn.css" rel="stylesheet" />
+</head>
+
+<style>
+	 html,body{
+	    width: 100%;
+	    height:100%;
+	    margin:0px;
+	    padding:0px;
+	    overflow:hidden;
+	}
+	body{
+	   display: flex;
+	   justify-content: center;
+	   align-items: center;
+	   padding-left: 80px; 
+	   margin: auto;
+	   flex-direction: row;
+	   font-family: 'Anek Telugu', sans-serif;
+	   background-color: rgb(252,237,224);
+	   font-family: 'Raleway', sans-serif;
+	}
+	.material-symbols-outlined {
+	  font-size: 3em;
+	  font-variation-settings:
+	  'FILL' 0,
+	  'wght' 400,
+	  'GRAD' 0,
+	  'opsz' 48
+	}
+	.logo{
+	text-align:center;
+	margin-top:10px;
+	}
+	h1,h3{
+	    text-align:center;
+	}
+	.container{
+		display:flex;
+		flex-direction: column; 
+	
+	}
+	.image img {
+	  width: 700px; 
+	}
+	.logo_top{
+		background-color:#F1F1F1;
+		margin:10px auto;
+		
+	}
+	.slogan{
+		color:#548CBD;
+	}
+	.wrapper{
+	    /* border:1px solid black; */
+	    width:400px;
+	    height: 500px;
+	    margin:10px;
+	    padding:10px;
+	    background-color: #fff;
+	    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	    border-radius: 15px;
+	}
+	.input_tags{
+	    display: flex;
+	    flex-direction: column;
+	    font-size:1.2em;
+	    margin:10px;
+	    padding:10px;
+	}
+	.input_tags > input {
+	    width:330px;
+	    font-size:1em;
+	    height:30px;
+	    margin:10px 0px;
+	    border-top-style: hidden;
+	    border-right-style: hidden;
+	    border-left-style: hidden;
+	    outline: none;
+	}
+	.input_tags > button {
+	    width:200px;
+	    height:40px;
+	    margin:20px auto;
+	    background-color:#F0483E;
+	    color:white;
+	    border:none;
+	}
+	
+	a:link {
+	  color: red;
+	  background-color: transparent;
+	  text-decoration: none;
+	}
+	
+	a:visited {
+	  color: red;
+	  background-color: transparent;
+	  text-decoration: none;
+	}
+</style>
+
+<body>
+<div class="container">
+<div class="logo_top">
+</div>
+<div class="slogan">
+</div>
+    <div class="wrapper">
+        <h1 style="margin-top: 50px;">Welcome!</h1>
+        <h3 style="margin-bottom: 20px;">Get the work faster and easier</h3>
+        <form action="SignIn" method="post">
+        <div class="input_tags">
+                <label>Username</label>
+                <input type="text" name="username" id="username" required autocomplete="off">
+                <label>Password</label>
+                <input type="password" name="password" id="password" required autocomplete="off">
+                <button type="submit" name="sign" value="signin" id="signin">SIGN IN</button>
+        </div>
+        </form>
+        <h3>Don't have an account? <a href="SignUp.html">Create one</a></h3>
+
+        </div>
+    </div>
+    <div class="image"><img src="https://cdn.dribbble.com/userupload/4566259/file/original-e1dc5ef1e7ea8131307deeb1866a3f91.png?compress=1&resize=1504x1128&vertical=center"></div>
+</body>
+</html>

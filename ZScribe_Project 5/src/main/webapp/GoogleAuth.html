@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>allow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+<style>
+	body, html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #FFECDE;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+}
+
+.bg-text {
+  background-color: #FAE1D2;
+  filter: drop-shadow(7px 4px 4px rgba(0,0,0,0.2));
+  font-family: 'Nunito', sans-serif;
+  color: black;
+  font-weight: bold;
+  border: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 30%;
+  padding: 30px;
+  text-align: center;
+  border-radius: 15px;
+}
+h1{
+	margin: 20px;
+}
+.allow{
+    padding: 10px 40px;
+    font-size: 26px;
+    color: white;
+    background-color: #F0483E;
+    border: 0px;
+    border-radius: 10px;
+  }
+a{
+	text-decoration:none;
+}
+</style>
+</head>
+<body>
+	
+
+<div class="bg-text">
+  <h1>Authorize your Google Account</h1>
+<a href="https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=755241042832-i1kdg3a4bgsijchfo15f2mpher9g7vpm.apps.googleusercontent.com&scope=https://www.googleapis.com/auth/blogger&redirect_uri=http://localhost:8130/ZScribe_Project/GetBloggerCode&prompt=consent&access_type=offline"><button class="allow">Allow</button></a>
+</div>
+</body>
+</html>
